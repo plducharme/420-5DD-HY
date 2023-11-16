@@ -9,6 +9,7 @@
 kubectl plus "haut" que Docker dans le PATH
 4) Partir le cluster
 - Partir Docker Desktop pour que le docker Engine roule
+>docker context use default  
 >minikube start --driver=docker
 5) Par défaut minikube a seulement une liste de "repo" distant, il faut donc ajouter l'image docker locale de l'application
 au repo local de minikube
