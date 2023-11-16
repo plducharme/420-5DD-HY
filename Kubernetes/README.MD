@@ -11,17 +11,18 @@ kubectl plus "haut" que Docker dans le PATH
 - Partir Docker Desktop pour que le docker Engine roule
 >docker context use default  
 >minikube start --driver=docker
-5) Par défaut minikube a seulement une liste de "repo" distant, il faut donc ajouter l'image docker locale de l'application
+5) 
+6) Par défaut minikube a seulement une liste de "repo" distant, il faut donc ajouter l'image docker locale de l'application
 au repo local de minikube
 >minikube image load <nom de l'image Docker locale>
 - Ensuite vous pouvez vérifier les images disponibles
 >minkube image ls
-6) Créer le déploiement et le service
+7) Créer le déploiement et le service
    - Il est possible de créer manuellement ou d'utiliser un fichier qui contient toute les configs
      - Pour l'utilisation manuelle, se référer au [Tutoriel de Kubernetes](https://kubernetes.io/docs/tutorials/hello-minikube/)
      - pour les créer via un fichier
 >kubectl create -f "nom_du_fichier_yaml"
-7) Pour ouvrir le service,
+8) Pour ouvrir le service,
 >minikube service <nom du service>
 - Ceci ouvrira un navigateur avec le service
 - Pour la liste des services
