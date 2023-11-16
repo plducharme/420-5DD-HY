@@ -8,6 +8,7 @@
   - Si vous installer une nouvelle version avec la commande ci-dessus, ne pas oublier de mettre le répertoire du nouveau
 kubectl plus "haut" que Docker dans le PATH
 4) Partir le cluster
+- Partir Docker Desktop pour que le docker Engine roule
 >minikube start
 5) Par défaut minikube a seulement une liste de "repo" distant, il faut donc ajouter l'image docker locale de l'application
 au repo local de minikube
