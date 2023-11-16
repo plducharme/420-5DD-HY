@@ -13,6 +13,8 @@ kubectl plus "haut" que Docker dans le PATH
 >minikube start --driver=docker
 5) Partir le proxy
 >kubectl proxy
+- Il est possible maintenant de voir la console Kubernetes
+  - [http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy](http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy)
 6) Par défaut minikube a seulement une liste de "repo" distant, il faut donc ajouter l'image docker locale de l'application
 au repo local de minikube
 >minikube image load <nom de l'image Docker locale>
